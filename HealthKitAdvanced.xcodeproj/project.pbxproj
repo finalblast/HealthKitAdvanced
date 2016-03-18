@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		50055ECE1C9B9FF2001D85D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50055ECD1C9B9FF2001D85D6 /* AppDelegate.swift */; };
-		50055ED01C9B9FF2001D85D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50055ECF1C9B9FF2001D85D6 /* ViewController.swift */; };
 		50055ED31C9B9FF2001D85D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50055ED11C9B9FF2001D85D6 /* Main.storyboard */; };
 		50055ED51C9B9FF2001D85D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50055ED41C9B9FF2001D85D6 /* Images.xcassets */; };
 		50055ED81C9B9FF3001D85D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50055ED61C9B9FF3001D85D6 /* LaunchScreen.xib */; };
 		50055EE41C9B9FF3001D85D6 /* HealthKitAdvancedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50055EE31C9B9FF3001D85D6 /* HealthKitAdvancedTests.swift */; };
+		50055EEE1C9BA17A001D85D6 /* AddBurnedCaloriesToDietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50055EED1C9BA17A001D85D6 /* AddBurnedCaloriesToDietViewController.swift */; };
+		504E99071C9BAAF00082E5C0 /* ListCaloriesBurnedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E99061C9BAAF00082E5C0 /* ListCaloriesBurnedTableViewController.swift */; };
+		504E99091C9BAB060082E5C0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504E99081C9BAB060082E5C0 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,16 @@
 		50055EC81C9B9FF2001D85D6 /* HealthKitAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50055ECC1C9B9FF2001D85D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50055ECD1C9B9FF2001D85D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50055ECF1C9B9FF2001D85D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50055ED21C9B9FF2001D85D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50055ED41C9B9FF2001D85D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50055ED71C9B9FF3001D85D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		50055EDD1C9B9FF3001D85D6 /* HealthKitAdvancedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthKitAdvancedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50055EE21C9B9FF3001D85D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50055EE31C9B9FF3001D85D6 /* HealthKitAdvancedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAdvancedTests.swift; sourceTree = "<group>"; };
+		50055EED1C9BA17A001D85D6 /* AddBurnedCaloriesToDietViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBurnedCaloriesToDietViewController.swift; sourceTree = "<group>"; };
+		504E99061C9BAAF00082E5C0 /* ListCaloriesBurnedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCaloriesBurnedTableViewController.swift; sourceTree = "<group>"; };
+		504E99081C9BAB060082E5C0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		504E990A1C9BAB060082E5C0 /* HealthKitAdvanced.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthKitAdvanced.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504E99091C9BAB060082E5C0 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,7 @@
 		50055EBF1C9B9FF2001D85D6 = {
 			isa = PBXGroup;
 			children = (
+				504E99081C9BAB060082E5C0 /* HealthKit.framework */,
 				50055ECA1C9B9FF2001D85D6 /* HealthKitAdvanced */,
 				50055EE01C9B9FF3001D85D6 /* HealthKitAdvancedTests */,
 				50055EC91C9B9FF2001D85D6 /* Products */,
@@ -77,12 +84,14 @@
 		50055ECA1C9B9FF2001D85D6 /* HealthKitAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				504E990A1C9BAB060082E5C0 /* HealthKitAdvanced.entitlements */,
 				50055ECD1C9B9FF2001D85D6 /* AppDelegate.swift */,
-				50055ECF1C9B9FF2001D85D6 /* ViewController.swift */,
 				50055ED11C9B9FF2001D85D6 /* Main.storyboard */,
 				50055ED41C9B9FF2001D85D6 /* Images.xcassets */,
 				50055ED61C9B9FF3001D85D6 /* LaunchScreen.xib */,
 				50055ECB1C9B9FF2001D85D6 /* Supporting Files */,
+				50055EED1C9BA17A001D85D6 /* AddBurnedCaloriesToDietViewController.swift */,
+				504E99061C9BAAF00082E5C0 /* ListCaloriesBurnedTableViewController.swift */,
 			);
 			path = HealthKitAdvanced;
 			sourceTree = "<group>";
@@ -161,6 +170,12 @@
 				TargetAttributes = {
 					50055EC71C9B9FF2001D85D6 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = T23PE6R3CV;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					50055EDC1C9B9FF3001D85D6 = {
 						CreatedOnToolsVersion = 6.1;
@@ -212,8 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50055ED01C9B9FF2001D85D6 /* ViewController.swift in Sources */,
+				50055EEE1C9BA17A001D85D6 /* AddBurnedCaloriesToDietViewController.swift in Sources */,
 				50055ECE1C9B9FF2001D85D6 /* AppDelegate.swift in Sources */,
+				504E99071C9BAAF00082E5C0 /* ListCaloriesBurnedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +352,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthKitAdvanced/HealthKitAdvanced.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HealthKitAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +366,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthKitAdvanced/HealthKitAdvanced.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HealthKitAdvanced/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +429,7 @@
 				50055EE91C9B9FF3001D85D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50055EEA1C9B9FF3001D85D6 /* Build configuration list for PBXNativeTarget "HealthKitAdvancedTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +438,7 @@
 				50055EEC1C9B9FF3001D85D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
